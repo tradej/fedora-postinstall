@@ -12,5 +12,5 @@ yum localinstall --nogpgcheck \
 yum install \
     gnome-mplayer @libreoffice qpdfview elinks firefox \
     file git qgit meld vim wget terminator \
-    #rpmdevtools mock \
+    #rpmdevtools mock xchat fedora-release-rawhide \
     -y
