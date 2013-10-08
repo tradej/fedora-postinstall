@@ -10,7 +10,7 @@ yum localinstall --nogpgcheck \
 
 # User graphics stuff
 yum install \
-    gnome-mplayer @libreoffice qpdfview elinks firefox \
+    elinks firefox gnome-mplayer htop @libreoffice qpdfview \
     file git qgit meld vim wget terminator \
-    #rpmdevtools mock xchat fedora-release-rawhide \
+    #rpmdevtools mock xchat fedora-release-rawhide pkgdb-cli \
     -y
