@@ -10,10 +10,15 @@ yum localinstall --nogpgcheck \
 
 # User graphics stuff
 yum install \
-    elinks firefox gnome-mplayer htop @libreoffice qpdfview \
-    file git qgit meld vim vim-jedi wget terminator \
-    #rpmdevtools mock xchat fedora-release-rawhide pkgdb-cli \
+    elinks firefox gnome-mplayer htop @libreoffice p7zip qpdfview \
+    file git meld qgit terminator vim vim-jedi wget xchat \
+    #rpmdevtools mock fedora-release-rawhide pkgdb-cli \
     -y
+
+# Gnash
+#yum install \
+#    gnash-plugin \
+#    -y
 
 # Fonts
 pushd ~/.fonts
@@ -35,5 +40,11 @@ pushd ~/.fonts
     popd
 
     fc-cache
+popd
 
-
+# User scripts
+pushd ~
+    git clone https://github.com/tradej/scripts.git
+    cd scripts
+    source install.sh
+popd
